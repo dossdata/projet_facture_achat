@@ -1,0 +1,211 @@
+body.index {
+  width: 100%;
+  background-size: 100% 100%;
+  
+  background-image: url("http://localhost:86/facture/asset/images/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  }
+  body.saisie {
+    width: 100%;
+    background-size: 100% 100%;
+    
+    background-image: url("http://localhost:86/facture/asset/images/plage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+    }
+.login {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius:15px;
+  box-shadow: 0px 4px 18px 8px rgba(117, 116, 116, 0.664);
+  background-color: aquamarine;
+  text-align: center;
+  padding-top: 50px;
+}
+.btn.btn-primary.active{
+  border-radius : 25px;
+  text-align: center;
+  margin-top:50px;
+  width: 300px;
+
+}
+
+
+input.email {
+  margin-left: 51px;
+  width: 350px;
+}
+input.psw {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 350px;
+}
+.champ {
+  width: 300px;
+  height: 600px;
+  right: 50px;
+  margin-top: 50px;
+  border-radius:15px;
+  box-shadow: 0px 4px 18px 8px rgba(117, 116, 116, 0.664);
+  background-color: rgb(231, 247, 12);
+  text-align: center;
+  padding-top: 20px;
+}
+.m{
+  display: inline-block;
+ 
+
+}
+  /* input[type=radio]{
+  
+  height: 15px;
+  
+  width: 15px;
+  
+  }
+  
+  .box{
+  
+  position:absolute;
+  
+  left:50%;
+  
+  top:50%;
+  
+  transform:translate(-50%, -50%);
+  
+  height:480px;
+  
+  width:380px;
+  
+  background: white;
+  
+  font-family: ‘Times New Roman’;
+  
+  border-radius:15px;
+  
+  box-shadow: 0px 4px 18px 8px rgba(117, 116, 116, 0.664);
+  
+  }
+  
+  #h1{
+  
+  width: 380px;
+  
+  height:80px;
+  
+  background:  rgb(83, 216, 228);
+  
+  color: white;
+  
+  text-align: center;
+  
+  margin-top: -2px;
+  
+  font-size:30px;
+  
+  }
+  
+  label{
+  
+  font-size: 18px;
+  
+  font-family:Verdana;
+  
+  margin-left: 20px;
+  
+  margin-top: 20px;
+  
+  }
+  
+  .icon {
+  
+  padding: 10px;
+  
+  background: rgb(0, 129, 123);
+  
+  color: white;
+  
+  min-width: 25px;
+  
+  text-align: center;
+  
+  margin-left:20px;
+  
+  margin-top:15px;
+  
+  }
+  
+  .label input{
+  
+  width:280px;
+  
+  height:40px;
+  
+  margin-top:10px;
+  
+  margin-left:0px;
+  
+  box-sizing: border-box;
+  
+  border: none;
+  
+  border-bottom: 2px solid rgb(0, 146, 160);
+  
+  font-size: 20px;
+  
+  }
+  
+  input[type=submit]{
+  
+  background-color: #38f1e8;
+  
+  border: none;
+  
+  color: white;
+  
+  padding: 16px 32px;
+  
+  text-decoration: none;
+  
+  border-radius: 15px;
+  
+  cursor: pointer;
+  
+  width: 200px;
+  
+  height:50px;
+  
+  margin-left:90px;
+  
+  margin-top: 10px;
+  
+  }
+  
+  #h4{
+  
+  font-size:15px;
+  
+  font-family:Verdana;
+  
+  margin-left:110px;
+  
+  } */
+
+  /* Youtube EN: https://youtu.be/-6wtzWx0hzs
+Youtube MG: https://youtu.be/dqJfkGzRmJI 
+My Box Model pen: https://codepen.io/loharano/pen/WNZRxPN 
+Kevin Powel: https://www.youtube.com/kevinpowell 
+The CSS Podcast: https://thecsspodcast.libsyn.com/ 
+Dribbble Shots: 
+https://dribbble.com/.../17014739-iRobot-Home-Design-Concept 
+https://dribbble.com/shots/17025872-Norra-Kville 
+Codepen Pens used:
+https://codepen.io/afa34/pen/VwzxmNN 
+https://codepen.io/StephenScaff/pen/oLBqmw?editors=1100 */
