@@ -6,9 +6,8 @@ try {
     $root = "root";
     $port = 3306;
 
-    $dsn = "mysql:host=". $server .";dbname=". $base.";charset=utf8";
-    $con = new PDO($dsn, $root, $password);
-    $con->setAttribute(PDO::ATTR_PERSISTENT, PDO::ERRMODE_EXCEPTION);
+    $con = new PDO('mysql:host='.$server.';port='.$port.';charset=utf8;dbname='.$base.'', $root, $password);
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(exception $e) {
     die('Erreur '.$e->getmessage());
