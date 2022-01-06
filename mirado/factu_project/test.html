@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+			font-family: calibri;
+		}
+		.box {
+			margin-bottom: 10px;
+		}
+		.box label {
+			display: inline-block;
+			width: 80px;
+			text-align: right;
+			margin-right: 10px;
+		}
+		.box input, .box textarea {
+			border-radius: 3px;
+			border: 1px solid #ddd;
+			padding: 5px 10px;
+		}
+		.btn-submit {
+			margin-left: 90px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="box">
+			<label>Nom:</label><input type="text" name="nom" id="nom" />
+		</div>
+		<div class="box">
+			<label>Contact:</label><input type="text" name="contact" id="contact" />
+		</div>
+		<button id="btn">Go</button>
+	</form>
+	<script>
+		$(document).ready(function() {
+
+			$("#btn").click(function() {
+				var firstName = $("#nom").val();
+				var lastName = $("#contact").val();
+				if(nom==''||contact=='') {
+					alert("Please fill all fields.");
+					return false;
+				}
+
+				$.ajax({
+					type: "POST",
+					url: "script.php",
+					data: {
+						nom: nom,
+						contact: contact,
+					},
+					cache: false,
+					success: function(data) {
+						alert(data);
+					},
+					error: function(xhr, status, error) {
+						console.error(xhr);
+					}
+				});
+				
+			});
+
+		});
+	</script>
+</body>
+</html>
