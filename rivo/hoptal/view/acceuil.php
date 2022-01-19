@@ -1,15 +1,21 @@
+<?php 
+session_start();
+if($_SESSION["nom"] == "deconecter"){
+  header('Location: http://localhost/hoptal/');
+}
+?>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Facture</title>
-    <link rel="shortcut icon" type="image" href="asset/images/user.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../asset/bootstrap/css/mdb.min.css">
     <link rel="stylesheet" href='../asset/bootstrap/css/addons/datatables.min.css'>
     <link rel="stylesheet" href='../asset/bootstrap/css/addons/datatables-select.min.css'>
     <link rel="stylesheet" href="../asset/bootstrap/css/style.css">
+    <link rel="stylesheet" href="../model/css/acceil.css">
 </head>
 <body>
 <!--Navbar-->
@@ -52,7 +58,12 @@
       </li>
       
     </ul>
-    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="md-form my-0">
+      <i class="fas fa-sign-in-alt"></i>&nbsp;<a href="http://localhost/hoptal/" class="sign_ut">Deconnexion</a>
+      </div>
+    </form>
 
   </div>
   <!-- Collapsible content -->
@@ -305,5 +316,7 @@
                 });
         });
     </script>
+
+    <script src="../model/js/aceuil.js"></script>
 </body>
 </html>

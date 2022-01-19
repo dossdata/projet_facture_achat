@@ -1,0 +1,12 @@
+
+    .sign_ut{
+        color:#fff;
+        cursor: pointer;
+    }
+
+
+    .sign_ut:hover{
+        color:rgb(241, 14, 14);
+        cursor: pointer;
+    }
+    

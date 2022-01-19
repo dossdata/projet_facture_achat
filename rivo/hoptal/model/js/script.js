@@ -10,7 +10,7 @@ $(function(){
           {
               paramettre: "acces_login_agent",
               login:login.val(),
-              password:password(),
+              password:password.val(),
           },
           success: function (response) {
               if(response > 0){
