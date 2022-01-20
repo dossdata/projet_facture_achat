@@ -20,7 +20,7 @@
     <div class="login">
             <div class="msg" style="color:green; "></div>
             <span>Login</span><input id="email" class="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" type="text"><br>
-            <span>Password</span><input id="psw" class="psw" type="password"><br>
+        <span>Password</span><input id="psw" class="psw" type="password"><br>
             <button id="valider" class="btn btn-primary active">E N T E R</button>  
     </div>
 
@@ -91,6 +91,6 @@
     <script type="text/javascript" src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="asset/bootstrap/js/addons/datatables.min.js"></script>
     <script type="text/javascript" src="asset/bootstrap/js/addons/datatables-select.min.js"></script>
-    <script type="text/javascript" src="model/js/script.js"></script>
+    <script type="text/javascript" src="model/js/authentif.js"></script>
 </body>
 </html>
