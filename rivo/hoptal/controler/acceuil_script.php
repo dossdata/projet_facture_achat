@@ -37,10 +37,11 @@ switch ($param) {
         $nom_nom = $_POST["nom_nom"];
         $id_patient = $_POST["id_patient"];
         update_table("hp","patient",['nom' =>$nom_nom],"id",$id_patient);
-        break;          
-        
-
-        
+        break;
+    case 'deleterow':    
+        $id_patient = $_POST["id_patient"];
+        deleterow("hp","patient","id",$id_patient);
+        break;      
 }
 
 
@@ -90,5 +91,13 @@ function update_table($nom_bdd, $nom_table,$array_nom_colone = ["exemple ['nom_c
     $myrequete = "UPDATE  $nom_bdd". "." . $nom_table. " SET ". substr($_valeur_update,0,(strlen($_valeur_update) -1)) ." WHERE ". $colone_chercher ."= ". $valeur_chercher;
     $res = $con->prepare($myrequete);
     $res->execute($array_nom_colone);
+    return  $myrequete;
+
+}
+function deleterow($nom_bdd, $nom_table,$colone_chercher = "colone where recherche exemple id....",$valeur_chercher){
+    include("connect.php");
+    $myrequete = "DELETE FROM  $nom_bdd". "." . $nom_table. " WHERE ". $colone_chercher ."= ". $valeur_chercher;
+    $res = $con->prepare($myrequete);
+    $res->execute();
     return  $myrequete;
 }

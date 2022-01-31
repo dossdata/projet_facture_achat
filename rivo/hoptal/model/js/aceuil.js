@@ -1,5 +1,5 @@
 $(function(){
-    var test_keyup = "";
+    var id_global = "";
     let nom = $('#nom'),
         prenom = $('#prenom'),
         login = $('#login'),
@@ -69,11 +69,13 @@ $(function(){
         if(test_keyup == 9 || test_keyup == 13){
             var data_valeur = JSON.parse('{"param":"update_nom","id_patient":"'+id_patient+'", "nom_nom":"'+$(this).text()+'"}');
             ajax_all("../controler/acceuil_script.php","json",data_valeur);
-            //load_premier();
+            load_premier();
         }
     })
 
-
+ $(document).on('click','#list_des_patients table tr',function(){
+    id_global = $(this).closest('tr').find('.id_patient').html();
+ })
  
 
 
@@ -91,5 +93,39 @@ function ajax_all(myurl,mydatatype,mydata){
         });  
         return valeur_azo; 
     }
+
+    // code key
+    document.onkeydown = function(e)
+	{
+        //alert(e.keyCode);
+		if(e.keyCode==46)
+		{
+			
+            alert(id_global + "io no suprimena");
+			CancelEvent(e);
+            var data_valeur = JSON.parse('{"param":"deleterow","id_patient":"'+id_global+'"}');    
+            ajax_all("../controler/acceuil_script.php","",data_valeur);
+            alert("Suppression OK !");
+            load_premier();
+
+		}
+	}
+   
+	function CancelEvent(e)
+	{
+		if(e)
+		{
+			e.stopPropagation();
+			e.preventDefault();
+		}
+		if(window.event)
+		{
+			window.event.cancelBubble = true;
+			window.event.returnValue  = false;
+			return;
+		}
+	}
+//--------------------x-----------------------------
+
 })
 
